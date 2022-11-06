@@ -1,5 +1,10 @@
 @import url("./global.css");
 
+main {
+  background: url("../images/background-subscription.png") no-repeat;
+  background-size: cover;
+}
+
 /* Header */
 .header {
   position: relative;
@@ -90,6 +95,12 @@
 
 /* Subscription Plans */
 
+.subscription {
+  background: url("../images/background-movies-series.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .subscription__plans {
   display: flex;
   justify-content: space-around;
@@ -154,7 +165,7 @@
 
 /* Contents */
 .contents {
-  margin: 100px 0;
+  margin: 100px auto;
 }
 
 .contents__container {

@@ -171,6 +171,10 @@ section {
 /* Media Queries */
 
 @media screen and (max-width: 480px) {
+  section {
+    scroll-margin-top: 120px;
+  }
+
   .menu {
     padding: 32px 24px;
     flex-direction: column;

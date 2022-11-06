@@ -271,7 +271,7 @@ main {
   }
 
   .subscription__plan {
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -283,6 +283,19 @@ main {
     grid-template-columns: repeat(6, 100%);
     grid-auto-flow: column;
     overflow: auto hidden;
+  }
+}
+
+@media (pointer: coarse) {
+  .contents__card:hover {
+    transform: none;
+  }
+
+  .subscription__plans:has(.subscription__card:nth-child(1):hover)
+    .subscription__card:nth-child(2),
+  .subscription__plans:has(.subscription__card:nth-child(2):hover)
+    .subscription__card:nth-child(1) {
+    transform: none;
   }
 }
 
@@ -323,18 +336,5 @@ main {
   40%,
   100% {
     transform: rotate(0);
-  }
-}
-
-@media (pointer: coarse) {
-  .contents__card:hover {
-    transform: none;
-  }
-
-  .subscription__plans:has(.subscription__card:nth-child(1):hover)
-    .subscription__card:nth-child(2),
-  .subscription__plans:has(.subscription__card:nth-child(2):hover)
-    .subscription__card:nth-child(1) {
-    transform: none;
   }
 }

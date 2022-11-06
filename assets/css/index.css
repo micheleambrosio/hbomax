@@ -30,10 +30,12 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  padding: 0 40px;
 }
 
 .header__channels {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
 }
@@ -176,75 +178,112 @@ main {
 }
 
 .contents__card {
-  height: 535px;
-  border-radius: 8px;
+  border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: 1s;
+  background-position: center;
+  transition: transform 0.8s, background 0.8s, border 1s;
 }
 
 .contents__card:hover {
   transform: scale(1.05);
+  border: 2px solid var(--tertiary-color);
+}
+
+.contents__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* HBO Content */
 
-.contents__card:nth-child(1) {
-  background-image: url("../images/hbo-default_0.webp");
-}
-
 .contents__card:nth-child(1):hover {
-  background-image: url(../images/hbo-hover_0.webp);
+  background-image: url("../images/hbo-hover_0.webp");
 }
 
 /* Max Originals Content */
 
-.contents__card:nth-child(2) {
-  background-image: url(../images/MAX-Default.webp);
-}
-
 .contents__card:nth-child(2):hover {
-  background-image: url(../images/MAX-Hover.webp);
+  background-image: url("../images/MAX-Hover.webp");
 }
 
 /* DC Content */
 
-.contents__card:nth-child(3) {
-  background-image: url(../images/DC_Default.webp);
-}
-
 .contents__card:nth-child(3):hover {
-  background-image: url(../images/DC-Hover.webp);
+  background-image: url("../images/DC-Hover.webp");
 }
 
 /* WB Content */
 
-.contents__card:nth-child(4) {
-  background-image: url(../images/WB-Default.webp);
-}
-
 .contents__card:nth-child(4):hover {
-  background-image: url(../images/WB-Hover.webp);
+  background-image: url("../images/WB-Hover.webp");
 }
 
 /* CN Content */
 
-.contents__card:nth-child(5) {
-  background-image: url(../images/CN-Default.webp);
-}
-
 .contents__card:nth-child(5):hover {
-  background-image: url(../images/CN-Hover.png);
+  background-image: url("../images/CN-Hover.png");
 }
 
 /* Champions League Content */
 
-.contents__card:nth-child(6) {
-  background-image: url(../images/UCL-Default.webp);
+.contents__card:nth-child(6):hover {
+  background-image: url("../images/UCL-Hover.webp");
 }
 
-.contents__card:nth-child(6):hover {
-  background-image: url(../images/UCL-Hover.webp);
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .subscription__plans {
+    gap: 40px;
+  }
+
+  .contents__container {
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .subscription__plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscription__card {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contents__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .subscription__price {
+    font-size: 1.5rem;
+  }
+
+  .subscription__description {
+    font-size: 1rem;
+  }
+
+  .subscription__plan {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .subscription__card {
+    padding: 40px;
+  }
+
+  .contents__container {
+    grid-template-columns: repeat(6, 100%);
+    grid-auto-flow: column;
+    overflow: auto hidden;
+  }
 }
 
 /* Animations */
@@ -284,5 +323,18 @@ main {
   40%,
   100% {
     transform: rotate(0);
+  }
+}
+
+@media (pointer: coarse) {
+  .contents__card:hover {
+    transform: none;
+  }
+
+  .subscription__plans:has(.subscription__card:nth-child(1):hover)
+    .subscription__card:nth-child(2),
+  .subscription__plans:has(.subscription__card:nth-child(2):hover)
+    .subscription__card:nth-child(1) {
+    transform: none;
   }
 }

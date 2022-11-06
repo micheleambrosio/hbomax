@@ -182,6 +182,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border: 2px solid transparent;
   transition: transform 0.8s, background 0.8s, border 1s;
 }
 
@@ -190,10 +191,15 @@ main {
   border: 2px solid var(--tertiary-color);
 }
 
+.contents__card:hover .contents__image {
+  opacity: 0;
+}
+
 .contents__image {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  transition: opacity 2s;
 }
 
 /* HBO Content */

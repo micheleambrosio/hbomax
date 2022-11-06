@@ -10,7 +10,17 @@
   O clone do site HBO Max serve como desafio para os alunos da plataforma testarem seus conhecimentos e colocarem em prática os recursos de HTML e CSS abordados nos cursos.
 </p>
 
-<img src="assets/images/readme-images/cover-2.png">
+<a href="https://micheleambrosio.github.io/hbomax/">
+  <img src="assets/images/readme-images/cover-2.png">
+</a>
+
+## 📎 Sumário
+
+- [✨ Features](#features)
+- [📦 Temas abordados](#topics)
+- [🏆 Desafio](#challenges)
+- [🌈 Demonstração](#demo)
+- [💻 Autora](#author)
 
 <h2 id="features">✨ Features</h2>
 
@@ -24,7 +34,7 @@
 
 *As features são visuais, não possuindo integração com nenhuma API. O intuito do projeto é reproduzir a interface do site original, com algumas modificações.*
 
-<h2 id="themes">📦 Temas abordados</h2>
+<h2 id="topics">📦 Temas abordados</h2>
 
 O projeto possui como intuito aplicar os conceitos abordados na Trilha de CSS da <a href="https://dio.me">DIO</a>, ministrada pela instrutora <a href="https://github.com/micheleambrosio">Michele Ambrosio</a>.
 
@@ -113,7 +123,7 @@ O resultado final do projeto deve contemplar todas as [features](#features) pres
 Você pode acessar ao resultado final do projeto [clicando aqui](https://micheleambrosio.github.io/hbomax/).
 
 
-<h2 id="author">✒️ Autora</h2>
+<h2 id="author">💻 Autora</h2>
 <p>
     <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/55519539?v=4"/>
     <p>&nbsp&nbsp&nbspMichele Queiroz Ambrosio<br>
@@ -123,4 +133,4 @@ Você pode acessar ao resultado final do projeto [clicando aqui](https://michele
 <p>
 
 ---
-⌨️ com ❤️ por [Michele Ambrosio](https://gist.github.com/micheleambrosio) 😊
+⌨️ com ❤️ por [Michele Ambrosio](https://github.com/micheleambrosio) 😊

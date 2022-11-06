@@ -52,7 +52,7 @@ Recursos CSS presentes no projeto:
 
 <h2 id="challenges">🏆 Desafio</h2>
 
-Como parte do desafio final da Trilha de CSS, o desenvolvedor deve reproduzir esse projeto, sem realizar uma consulta do código final do projeto, presente na branch `master`.
+Como parte do desafio final da Trilha de CSS, o desenvolvedor deve reproduzir [esse projeto](https://micheleambrosio.github.io/hbomax/), sem realizar uma consulta do código final do site, presente na branch `master` deste repositório.
 
 Para auxiliar na reprodução, utilize a branch `template-desafio`. Faça um clone em sua máquina ou um fork do projeto em seu repositório.
 

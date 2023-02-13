@@ -1,0 +1,396 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+@import url(./mediaqueries.css);
+@import url(./animations.css);
+
+/* Variáveis */
+:root {
+        --primary-color: #020228;
+        --secondary-color: #ff00e5;
+        --tertiary-color: #b535f6;
+        --btn-bg-color-gradient: linear-gradient(45deg,
+                        #9b34ef 0%,
+                        #490cb0 20%,
+                        transparent 50%);
+        --btn-link-bg-color: #fff;
+        --btn-link-color: #000;
+        --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+        --divider-bg-color: linear-gradient(90deg,
+                        #5516ba,
+                        rgba(255, 0, 229, 0.5) 80%);
+        --nav-bg-color: rgba(0, 0, 0, 0.3);
+        --text-color: #fff;
+        --link-color: #9e86ff;
+        --form-bg-color: rgba(211, 211, 211, 0.06);
+        --form-field-bg-color: rgba(0, 0, 0, 0.2);
+        --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+        --form-field-placeholder: rgba(255, 255, 255, 0.7);
+        --form-field-error: rgb(255, 76, 76);
+
+        scroll-behavior: smooth;
+}
+
+/* Variáveis */
+/* Reset */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Raleway", sans-serif;
+}
+
+/* Reset */
+/* Body */
+body {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+}
+
+section {
+        scroll-margin-top: 80px;
+}
+
+p {
+        font-family: "Quicksand", sans-serif;
+}
+
+.text--small {
+        font-size: 1rem;
+        font-weight: 300;
+}
+
+/* Body */
+/* Navbar */
+.menu {
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        background-color: var(--nav-bg-color);
+        padding: 12px 18px;
+}
+
+.menu img {
+        width: 50%;
+}
+
+.menu__logo {
+        max-width: 160px;
+}
+
+.menu__item {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        padding: 24px;
+        letter-spacing: 2px;
+        margin-right: 24px;
+}
+
+.menu__item--button {
+        padding: 8px 26px !important;
+        transition: background 1s, color 1s;
+}
+
+.menu__item--button:hover {
+        background-color: var(--btn-link-bg-color);
+        color: var(--btn-link-color);
+}
+
+/* Navbar */
+/* Header */
+main {
+        background: url("../images/background-subscription.png") no-repeat;
+        background-size: cover;
+}
+
+.header {
+        display: block;
+        align-items: center;
+        position: relative;
+        padding: 150px 0 300px;
+        margin: auto;
+        background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite alternate;
+}
+
+.header::after {
+        content: "";
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+
+.header__content {
+        object-fit: contain;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 30px;
+}
+
+.header__content img {
+        overflow: clip;
+        overflow-clip-margin: content-box;
+
+}
+
+.header__channels {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+}
+
+.header__title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 40px;
+}
+
+.header__title--light {
+        font-weight: lighter;
+        font-size: 2rem;
+}
+
+.divider {
+        width: 70%;
+        max-width: 700px;
+        height: 5px;
+        background-color: var(--divider-bg-color);
+}
+
+.offer {
+        font-size: 1.25rem;
+        text-align: center;
+}
+
+.offer p {
+        text-align: center;
+}
+
+.offer__price {
+        font-family: "Raleway", sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+}
+
+.offer__price--small {
+        font-size: 1rem;
+        font-weight: 300;
+}
+
+.button {
+        padding: 16px 40px;
+        background-color: var(--tertiary-color);
+        border-radius: 500px;
+        font-weight: 700;
+        color: var(--text-color);
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 4px;
+        border: none;
+        cursor: pointer;
+}
+
+.button .button--gradient {
+        background: var(--btn-bg-color-gradient);
+        transition: background 1s, outline 1s, transform 1s;
+        outline: 3px solid transparent;
+        background-size: 250%;
+}
+
+.button.button--gradient:hover {
+        background-color: transparent;
+        background-position: 100%;
+        outline: 2px solid var(--secondary-color);
+        transform: scale(1.05);
+}
+
+.header__button {
+        animation: wiggle 2.2s linear infinite;
+}
+
+.header .text--small {
+        max-width: 300px;
+        text-align: center;
+}
+
+/* Header */
+/* Section 1 | Plans */
+.container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 24px;
+        text-align: center;
+}
+
+#plans {
+        background: url("../images/background-movies-series.png") no-repeat;
+        background-size: cover;
+        position: relative;
+}
+
+.title__plans {
+        font-size: 2rem;
+        font-weight: 500;
+}
+
+.subscription__plans {
+        display: flex;
+        justify-content: space-around;
+        gap: 80px;
+        margin: 40px 0;
+        perspective: 2000px;
+        perspective-origin: top;
+}
+
+.subscription__card {
+        background: var(--card-bg-color);
+        padding: 40px 60px;
+        border-radius: 8px;
+        display: flex;
+        min-height: 600px;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 1s ease-in-out;
+}
+
+.subscription__plans:has(.subscription__card:nth-child(1):hover) .subscription__card:nth-child(2) {
+        transform: rotateY(-45deg);
+}
+
+.subscription__plans:has(.subscription__card:nth-child(2):hover) .subscription__card:nth-child(1) {
+        transform: rotateY(45deg);
+}
+
+.description {
+        text-align: left;
+        list-style: none;
+        font-size: 1.25rem;
+        margin-bottom: 14px;
+        padding-left: 14px;
+}
+
+.price {
+        font-size: 2rem;
+        font-family: "Raleway", sans-serif;
+        color: var(--secondary-color);
+        font-weight: 700;
+}
+
+.price .text--small {
+        color: var(--text-color);
+        font-weight: 300;
+        font-size: small;
+}
+
+.description::marker {
+        content: "+";
+        font-size: 2rem;
+        margin: 0 8px 0 0;
+}
+
+.plan__mobile,
+.plan__multi {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.25rem;
+        margin-bottom: 16px;
+}
+
+.multi__button {
+        margin-top: 75px;
+}
+/* Section 2 | Cards */
+#content__title h2 {
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+}
+.content {
+        margin: 100px auto;
+}
+
+.container__content {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+}
+
+.content__card {
+        border-radius: 16px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid transparent;
+        transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.content__card:hover {
+        transform: scale(1.05);
+        border: 2px solid var(--tertiary-color);
+}
+
+.content__card:hover .content__image {
+        opacity: 0;
+}
+
+.content__image {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: opacity 2s;
+}
+
+/* HBO Content */
+
+.content__card:nth-child(1):hover {
+        background-image: url("../images/hbo-hover_0.webp");
+}
+
+/* Max Originals Content */
+
+.content__card:nth-child(2):hover {
+        background-image: url("../images/MAX-Hover.webp");
+}
+
+/* DC Content */
+
+.content__card:nth-child(3):hover {
+        background-image: url("../images/DC-Hover.webp");
+}
+
+/* WB Content */
+
+.content__card:nth-child(4):hover {
+        background-image: url("../images/WB-Hover.webp");
+}
+
+/* CN Content */
+
+.content__card:nth-child(5):hover {
+        background-image: url("../images/CN-Hover.png");
+}
+
+/* Champions League Content */
+
+.content__card:nth-child(6):hover {
+        background-image: url("../images/UCL-Hover.webp");
+}
+
+/* Section 2 | Cards */

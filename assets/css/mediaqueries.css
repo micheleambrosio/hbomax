@@ -1,0 +1,53 @@
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .subscription__plans {
+        gap: 40px;
+    }
+
+    .contents__container {
+        gap: 32px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .subscription__plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription__card {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contents__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .subscription__price {
+        font-size: 1.5rem;
+    }
+
+    .subscription__description {
+        font-size: 1rem;
+    }
+
+    .subscription__plan {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .subscription__card {
+        padding: 40px;
+    }
+
+    .contents__container {
+        grid-template-columns: repeat(6, 100%);
+        grid-auto-flow: column;
+        overflow: auto hidden;
+    }
+}

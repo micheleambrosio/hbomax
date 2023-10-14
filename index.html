@@ -1,1 +1,165 @@
-<!-- TODO -->
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/home.css" />
+    <title>HBO Max - Home</title>
+  </head>
+  
+  <body>
+    <nav class="menu">
+        <a href="index.html" class="menu__logo">
+          <img src="assets/images/hbo-logo.svg" alt="Logo HBOMAX with name" class="menu__logo-image"/>
+        </a>
+        <div>
+          <a href="signIn.html" class="menu__item"> Login </a>
+          <a href="#subscription" class="menu__item menu__item--button button"> Subscribe Now </a>
+        </div>
+      </nav>
+
+    <header class="header">
+      <div class="header__content">
+        <div class="header__channels">
+          <img class="header__channel" src="assets/images/hbo.png" alt="HBO" />
+          <img class="header__channel" src="assets/images/dc.png" alt="DC" />
+          <img class="header__channel" src="assets/images/wb.png" alt="Warner Bross"/>
+          <img class="header__channel" src="assets/images/cartoon-network_neutral.png" alt="Cartoon Network"/>
+          <img class="header__channel" src="assets/images/max_originals.png" alt="Max Originals"/>
+        </div>
+        <h1 class="header__title">
+          <span class="header__title--light"> Enjoy the best stories </span>
+          For everybody
+        </h1>
+        <div class="divider"></div>
+        <div class="offer">
+          <p> Subscriptions from </p>
+          <p class="offer__price"> R$19,99 <span class="offer__price--small">/month*</span> </p>
+        </div>
+        <a href="#subscription" class="button button--gradient header__button"> Subscribe now </a>
+        <p class="text--small"> *applicable to annual plan with advance payment.</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="subscription" class="subscription">
+        <div class="container">
+          <h2 class="title">
+            Discover our plans and save on the quarterly or annual subscription with advance payment.
+          </h2>
+          <div class="subscription__plans">
+            <div class="subscription__card">
+              <div>
+                <div class="subscription__plan">
+                  <h3>Mobile</h3>
+                  <p class="subscription__price"> R$ 22,99 <span class="text--small">/month</span></p>
+                </div>
+
+                <ul class="subscription__goals">
+                  <li class="subscription__description">
+                    Enjoy it on smartphones and tablets, wherever you want.
+                  </li>
+                  <li class="subscription__description">
+                    Watch on 2 screen at a time.
+                  </li>
+                  <li class="subscription__description">
+                    Have content in resolution adapted for each device.
+                  </li>
+                  <li class="subscription__description">
+                    Download your favorite series and movies, watch wherever and whenever he wants.
+                  </li>
+                </ul>
+              </div>
+              <button class="button button--gradient"> Choose the Mobile Plan </button>
+            </div>
+
+            <div class="subscription__card">
+              <div>
+                <div class="subscription__plan">
+                  <h3>Multiscreen</h3>
+                  <p class="subscription__price"> R$ 39,99 <span class="text--small">/month</span></p>
+                </div>
+
+                <ul>
+                  <li class="subscription__description">
+                    Enjoy on all your devices.
+                  </li>
+                  <li class="subscription__description">
+                    Chromecast e Airplay available.
+                  </li>
+                  <li class="subscription__description">
+                    Watch on up to 5 screens at the same time.
+                  </li>
+                  <li class="subscription__description">
+                    Have content in high definition, with 4K quality.
+                  </li>
+                  <li class="subscription__description">
+                    Download your favorite series and movies, watch wherever and whenever he wants.
+                  </li>
+                  <li class="subscription__description">
+                    Create up to 5 different profiles.
+                  </li>
+                </ul>
+              </div>
+              <button class="button button--gradient">
+                Choose the Multiscreen Plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contents" class="contents container">
+        <h2 class="title">Discover new universes</h2>
+        <div class="contents__container">
+          <div class="contents__card">
+            <img class="contents__image"src="assets/images/hbo-default_0.webp" alt="HBO"/>
+          </div>
+          <div class="contents__card">
+            <img class="contents__image" src="assets/images/MAX-Default.webp" alt="Max Originals"/>
+          </div>
+          <div class="contents__card">
+            <img class="contents__image" src="assets/images/DC_Default.webp" alt="DC"/>
+          </div>
+          <div class="contents__card">
+            <img class="contents__image" src="assets/images/WB-Default.webp" alt="Warner Bross"/>
+          </div>
+          <div class="contents__card">
+            <img class="contents__image" src="assets/images/CN-Default.webp" alt="Cartoon Network"/>
+          </div>
+          <div class="contents__card">
+            <img class="contents__image" src="assets/images/UCL-Default.webp" alt="UEFA Champions League"/>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div>
+        <a class="footer__link" href="https://www.hbomax.com/br/pt/sitemap"> Now on HBO Max </a>
+        <a class="footer__link" href="https://www.hbomax.com/br/pt/coming-soon"> Coming-soon </a>
+        <a class="footer__link" href="https://www.hbomax.com/br/pt/feature"> Featured film </a>
+        <a class="footer__link" href="https://www.hbomax.com/br/pt/series">Séries</a>
+        <a class="footer__link" href="https://help.hbomax.com/br">Ajuda</a>
+      </div>
+      <p class="text--small footer__legal">
+        © 2023 WarnerMedia Direct Latin America, LLC. All the rights reserved. HBO Max is used under license.
+      </p>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/HBOMaxBr/" class="footer__social-link">
+          <img src="assets/images/fb_0.png" alt="Facebook"/>
+        </a>
+        <a href="https://twitter.com/HBOMaxBR" class="footer__social-link">
+          <img src="assets/images/twitter_0.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/hbomaxbr/" class="footer__social-link">
+          <img src="assets/images/instagram_0.png" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/c/hbomaxbr" class="footer__social-link">
+          <img src="assets/images/youtube_0.png" alt="Youtube" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
